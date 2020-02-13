@@ -1,0 +1,7 @@
+This will help setup the arduino. Its fairly simple.  https://arduino.stackexchange.com/questions/55976/install-arduino-ide-in-raspberry-pi-3-model-b
+
+Use the classic blink program to ensure its working. The ino file.
+
+This website explains how and provides a tutorial for how to use the adrion with a water pump and sensor.  https://create.arduino.cc/projecthub/neetithakur/automatic-plant-watering-system-using-arduino-uno-8764ba
+
+They provide example code in c++ so we can to use this as a guideline for coding it in python and get the sensor to work with the audrino.
