@@ -1,6 +1,7 @@
 import threading, time, queue, database, datacollector, multiprocessing, traceback
 import RPi.GPIO as gpio
 import matplotlib.pyplot as plt
+import matplotlib.colors
 
 from tkinter import *
 from logging import *
@@ -96,15 +97,15 @@ if(__name__=="__main__"):
     # GUI widgets here:
     #
     # Pump Button
-    pumpButton = Button(frame, text="Pump", command=pumpWater)
+    pumpButton = Button(frame, color="#4278f5", text="Pump", command=pumpWater)
     pumpButton.pack()
 
     # Graphing buttons with labels
-    fiveButton = Button(frame, text="5 min.", command= lambda :createGraph(5))
+    fiveButton = Button(frame, color='#e9f542', text="5 minutes.", command= lambda :createGraph(5))
     fiveButton.pack()
-    sixtyButton = Button(frame, text="60 min.", command= lambda :createGraph(60))
+    sixtyButton = Button(frame, color='#f5b642', text="60 minutes", command= lambda :createGraph(60))
     sixtyButton.pack()
-    twelveHourButton = Button(frame, text="12 hr.", command= lambda :createGraph(12*60))
+    twelveHourButton = Button(frame, color='#f54242', text="12 hours", command= lambda :createGraph(12*60))
     twelveHourButton.pack()
 
     gui.mainloop()
